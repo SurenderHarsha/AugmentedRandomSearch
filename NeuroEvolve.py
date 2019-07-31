@@ -86,6 +86,8 @@ def softmax(inputs):
 def linear(x):
     return x
 
+def relu_out(inputs):
+    return [relu(x) for x in inputs]
 
 # The class of Neural Network, rest of it will be explained in Readme
 class NeuroES(object):
